@@ -17,7 +17,7 @@ public class IndexPageController {
     }
     @GetMapping("/camping")
     public String sendCampingPage(Model model){
-        model.addAttribute("campingContentPage", "Camping_About.jsp");
+        model.addAttribute("campingContentPage", "/front/camp/Camping_About.jsp");
         return "hj/camp/container";
     }
 

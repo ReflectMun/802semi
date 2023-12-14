@@ -18,46 +18,11 @@ public class CampingAreaSearchPageController {
     }
     ////////////////////////////////////////////////////////
 
-    @GetMapping
-    public String sendCampingSearchingPage(Model model){
-        model.addAttribute("msg", "camping");
-
-        return "jh/camp";
-    }
-
-
-
 
 
 
     }
 
 
-    @GetMapping("/draft1")
-    public String sendDraft1(){
-        return "kmh/draft/1";
-    }
-    @GetMapping("/draft2")
-    public String sendDraft2(){
-        return "kmh/draft/2";
-    }
 
-    @PostMapping("/detail/{campingAreaName}")
-    public String sendDetailPage(CampingAreaInfoDTO data, Model model){
-        model.addAttribute("thumbnail", data.getFirstImageUrl());
-        model.addAttribute("campingAreaName", data.getFacltNm());
-        model.addAttribute("telephoneNumber", data.getTel());
-        model.addAttribute("periodOfOperation", data.getOperPdCl() + " " + data.getOperDecl());
-        model.addAttribute("address", data.getAddr1() + " " + data.getAddr2());
-        model.addAttribute("subsidiaryFacilities", data.getSbrsEtc());
-        model.addAttribute("etc", "etc??");
 
-        return "hj/camp/camp_information";
-    }
-
-    @GetMapping("/detail/{campingAreaName}")
-    @ResponseBody
-    public String sendError(){
-        return "잘못된 접근입니다";
-    }
-}
