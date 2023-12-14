@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexPageController {
     @GetMapping("/index")
     public String sendIndexPage(){
+
         return "kmh/index";
+
+
     }
     @GetMapping("/camping")
     public String sendCampingPage(Model model){
