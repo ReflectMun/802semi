@@ -46,7 +46,7 @@ public class TrailRoutePageController {
     @PostMapping("/detail/{lngi}/{lati}/{index}")
     public String GetDetailTrain(@PathVariable("lngi") double lngi, @PathVariable("lati") double lati, @PathVariable ("index") int index, Model model) throws Exception {
 
-<<<<<<< HEAD
+
     ArrayList<com.example.outgoit.trail.dto.FeatureData> trailRouteList = trailRouteService.getTrailRouteList(lngi, lati); // list를 반환함.
         System.out.println(index);
 
@@ -56,9 +56,9 @@ public class TrailRoutePageController {
     // 모델에 trailRouteList를 추가
     model.addAttribute("trailRouteList", trailRouteList.get(index).getProperties());
 
-=======
+
         model.addAttribute("trailRouteList", trailRouteList);
->>>>>>> b8a0715ec2a1589f40916754429c614e6e6c84e7
+
 
         // 모델에 trailRouteList를 추가
 //    model.addAttribute("trailRouteList", trailRouteList);
