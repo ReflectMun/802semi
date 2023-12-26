@@ -37,9 +37,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         const campingAreaId = document.getElementById("camping-area-id").value
         try {
             const resData = await getReviewList(campingAreaId, 1)
+            // 이 함ㅅ가 실행이 왼료될때까지 기다리고. 이 값을 resData로 담음.
 
             if(resData === null)
                 throw new Error("서버와의 통신 중 알 수 없는 오류가 발생")
+            // 값이 있어야하는데 null이면 함수 실행이 오류가 생겼다는 의미니까 이렇게 예외처리 해줌.
 
             for(const review of resData){
                 const madeReviewBox = makeReviewBox(review)
@@ -400,9 +402,11 @@ function makeReviewBox(reviewData) {
  * */
 async function getReviewList(areaId, pageNumber){
     const reqUrl = "/api/review/camping/list?" + `campingAreaId=${areaId}&pageNumber=${pageNumber}`
+    // 파라미터 값으로 areaid랑 페이지 넘버 넘김!!!
     try {
         const {data: resData} = await axios.get(reqUrl)
         return resData
+
     } catch (e) {
         return null
     }

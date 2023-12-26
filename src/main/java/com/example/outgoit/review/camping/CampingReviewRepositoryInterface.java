@@ -42,7 +42,5 @@ public interface CampingReviewRepositoryInterface extends JpaRepository<CampingR
 
 
 
-
-
 }
 

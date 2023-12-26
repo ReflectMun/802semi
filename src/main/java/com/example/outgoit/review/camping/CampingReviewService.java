@@ -26,6 +26,7 @@ public class CampingReviewService {
     }
 
     // 리뷰 수정 및 삭제를 위해 해당 작업을 할 리뷰를 불러오는 메서드
+    // db랑 연동해서 리턴값으로 객체를 만들겠다.
     public ArrayList<CampingReview> getCampingAreaReview(int commentId){
         return new ArrayList<CampingReview>(repo.findByCommentNumber(commentId));
     }
@@ -85,6 +86,7 @@ public class CampingReviewService {
         } catch (OptimisticLockingFailureException e){
             return 702;
         }
+        // 리뷰발생했을때 체이닝해서 알아보기 편하게 하기위해서 만듬
     }
 
     // 캠핑장 평점 조회
