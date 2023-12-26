@@ -131,7 +131,7 @@
                     </div>
                     <div class="rh-riding-wood-mainPost" id="content5">
                         &nbsp;라이딩 중 체내 수분 공급이 원활하지 않으면 운동 능력이 저하되고 근육 경련, 탈진, 탈수 증세가 발생해요. 이를 예방하기 위해 충분한 수분 섭취가 필요해요. <br>
-                        특히 스포츠 드링크는 체내에서 빠져나간 전해질을 채우는 데에 도움이 되고, 음료는 갈증이 오기 전 미리 마셔야 해요.
+                        &nbsp;특히 스포츠 드링크는 체내에서 빠져나간 전해질을 채우는 데에 도움이 되고, 음료는 갈증이 오기 전 미리 마셔야 해요.
                         <div class="rh-back-set rh-pointer" id="back5">돌아가기 <img width="20%"
                                                                                  src="/resources/static/img/icon/next.png"
                                                                                  alt=""></div>
@@ -186,7 +186,7 @@
                         <div class="rh-riding-wood-mainPost-best rh-pointer" id="best1">
                             <div onclick="location.href=''" class="rh-riding-wood-mainPost-bestText">
                                 <div>춘천</div>
-                                <div class="bestText2">의암호 둘레길</div>
+                                <div class="bestText2">의암호 자전거길</div>
                             </div>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
                         <div class="rh-riding-wood-mainPost-best rh-pointer" id="best2">
                             <div onclick="location.href=''" class="rh-riding-wood-mainPost-bestText">
                                 <div>인천-서울</div>
-                                <div class="bestText2">아라뱃길</div>
+                                <div class="bestText2">아라 자전거길</div>
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                         <div class="rh-riding-wood-mainPost-best rh-pointer" id="best3">
                             <div onclick="location.href=''" class="rh-riding-wood-mainPost-bestText">
                                 <div>대전</div>
-                                <div class="bestText2">둔산대교-대청댐</div>
+                                <div class="bestText2">대청호수 자전거길</div>
                             </div>
                         </div>
                     </div>

@@ -36,6 +36,8 @@ public class CampingAreaSearchPageController {
         return "jh/camp";
     }
 
+<<<<<<< HEAD
+=======
     @GetMapping("/About")
     public String aboutPage(Model model){
         return "RH/jsp/Camping/Camping_About";
@@ -55,6 +57,7 @@ public class CampingAreaSearchPageController {
       //return "RH/jsp/Riding/Riding_Beginner";
     }
 
+>>>>>>> dev
     @GetMapping("/draft1")
     public String sendDraft1(){
         return "jiho/draft/1";
