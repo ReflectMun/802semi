@@ -4,7 +4,6 @@ import com.example.outgoit.trail.dto.FeatureData;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 
@@ -44,14 +43,27 @@ public class TrailRoutePageController {
 //        }
 //
 //    }
-    @PostMapping("/detail/{lngi}/{lati}")
-    public String GetDetailTrain(@PathVariable("lngi") double lngi, @PathVariable("lati") double lati, Model model) throws Exception {
-        ArrayList<FeatureData> trailRouteList = trailRouteService.getTrailRouteList(lngi, lati); // list를 반환함.
+    @PostMapping("/detail/{lngi}/{lati}/{index}")
+    public String GetDetailTrain(@PathVariable("lngi") double lngi, @PathVariable("lati") double lati, @PathVariable ("index") int index, Model model) throws Exception {
 
+<<<<<<< HEAD
         model.addAttribute("trailRouteList", trailRouteList);
+=======
+    ArrayList<com.example.outgoit.trail.dto.FeatureData> trailRouteList = trailRouteService.getTrailRouteList(lngi, lati); // list를 반환함.
+        System.out.println(index);
+
+    // 한라산을 검색했을때 분류한 5개의 등산로가 배열로 담겨있음!
+        System.out.println(trailRouteList.get(index).getProperties());
+
+    // 모델에 trailRouteList를 추가
+    model.addAttribute("trailRouteList", trailRouteList.get(index).getProperties());
+
+>>>>>>> trail
 
         // 모델에 trailRouteList를 추가
 //    model.addAttribute("trailRouteList", trailRouteList);
+
+
 //    // 다른 TrailRouteDTO 속성들을 얻어와서 모델에 추가
 //    // ...
 //
