@@ -42,10 +42,11 @@ pageEncoding="UTF-8"%>
               </span>
             </div>
           </div>
-          <div class="rh-riding-history-wood-mainBox">
+          <div class="rh-riding-wood-mainBox">
             <!-- 통나무 내용판 -->
             <div class="rh-riding-history-wood-main">
-              <p style="margin-top: 7vw"
+              <p><img src="/resources/static/img/기타/pin.png" alt=""></p>
+              <p
                 class="rh-riding-history-wood-text"
                 data-aos="fade-up"
                 data-aos-easing="ease-in-out"
@@ -104,7 +105,7 @@ pageEncoding="UTF-8"%>
                 라이더들 간의 소통과 교류가 활성화되었습니다.
               </p>
               <p
-                class="rh-riding-history-wood-text"
+                class="rh-riding-history-wood-textLast"
                 data-aos="fade-up"
                 data-aos-easing="ease-in-out"
                 data-aos-delay="150"
